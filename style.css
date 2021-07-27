@@ -11,7 +11,7 @@ header
   flex-direction:row;
   align-items: center;
   background-color: #2b2a2a;
-  color: #b4b3b3;
+  color: #353535;
 }
 
 .frage
@@ -21,7 +21,7 @@ header
   justify-content: start;
   width: 350px;
   height: 30px;
-  background-color: #fafafa;
+  background-color: #b8b8b8;
   box-shadow: 1px -1px 17px 4px rgba(199,181,181,0.6);
   padding-left: 10px;
   border-radius: 5px;
@@ -52,7 +52,7 @@ header
 
 .info a:first-child
 {
-  width: 150px;
+  width: 200px;
   
 }
 
@@ -68,60 +68,10 @@ header
   margin-right: 10px;
 }
 
+          
 
 
-
-
-
-
-/*========== KONFETİ     ===========*/
-
-.confetti {
-  width: 15px;
-  height: 15px;
-  background-color: #f2d74e;
-  position: absolute;
-  left: 50%;
-  animation: confetti 20s ease-in-out -2s infinite;
-  transform-origin: left top;
-}
-.confetti:nth-child(1) {
-  background-color: #f2d74e; left: 10%; animation-delay: 0;
-}
-.confetti:nth-child(2) {
-  background-color: #95c3de; left: 20%; animation-delay: -5s;
-}
-.confetti:nth-child(3) {
-  background-color: #ff9a91; left: 30%; animation-delay: -3s;
-}
-.confetti:nth-child(4) {
-  background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
-}
-.confetti:nth-child(5) {
-  background-color: #95c3de; left: 50%; animation-delay: -4s;
-}
-.confetti:nth-child(6) {
-  background-color: #ff9a91; left: 60%; animation-delay: -6s;
-}
-.confetti:nth-child(7) {
-  background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
-}
-.confetti:nth-child(8) {
-  background-color: #95c3de; left: 80%; animation-delay: -2s;
-}
-.confetti:nth-child(9) {
-  background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
-}
-.confetti:nth-child(10) {
-  background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
-}
-
-
-
-
-
-
-/*========= SLİDER   ==============*/
+                                            /*========================            SLİDER          ==========================*/
 
 :root
 {
@@ -231,12 +181,54 @@ margin: 0 20px;
 
 
 
+                                            /*========================            KONFETİ          ==========================*/
+
+.confetti {
+  width: 15px;
+  height: 15px;
+  background-color: #f2d74e;
+  position: absolute;
+  left: 50%;
+  animation: confetti 20s ease-in-out -2s infinite;
+  transform-origin: left top;
+}
+.confetti:nth-child(1) {
+  background-color: #f2d74e; left: 10%; animation-delay: 0;
+}
+.confetti:nth-child(2) {
+  background-color: #95c3de; left: 20%; animation-delay: -5s;
+}
+.confetti:nth-child(3) {
+  background-color: #ff9a91; left: 30%; animation-delay: -3s;
+}
+.confetti:nth-child(4) {
+  background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+}
+.confetti:nth-child(5) {
+  background-color: #95c3de; left: 50%; animation-delay: -4s;
+}
+.confetti:nth-child(6) {
+  background-color: #ff9a91; left: 60%; animation-delay: -6s;
+}
+.confetti:nth-child(7) {
+  background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+}
+.confetti:nth-child(8) {
+  background-color: #95c3de; left: 80%; animation-delay: -2s;
+}
+.confetti:nth-child(9) {
+  background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+}
+.confetti:nth-child(10) {
+  background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
+}
 
 
 
 
+                                              
+                                            /* =======================          STİCK NAVBAR        ========================= */
 
-/* ========  STİCK NAVBAR  ======== */
 
 
 .sticky {
@@ -253,7 +245,7 @@ margin: 0 20px;
 
 
 
-/* ========  NAVBAR ======== */
+                                            /* =======================             NAVBAR           ========================= */
 
 #navbar
 {
@@ -273,7 +265,7 @@ margin: 0 20px;
 {
   width: 100%;
 	display: flex;
-  justify-content:space-between;
+  justify-content:start;
   align-items: center;
   
 	width: 100%;
@@ -292,6 +284,8 @@ margin: 0 20px;
 	color: rgb(83, 82, 82);
 	text-align: center;
   padding-left: 50px;
+  margin-right: 150px;
+
 }
 
 .dropdownContainer
@@ -346,16 +340,12 @@ margin: 0 20px;
 
 .dropdown
 {
-
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 align-items: center;
 margin-bottom: 40px;
 text-align: center;
-
-
-
 }
 
 .dropbtn {
@@ -404,29 +394,24 @@ text-align: center;
 }
 .dropdown1 {
   
-  margin-top: 250px;
+  margin-top: 175px;
   margin-left:10px;
 
 }
 .dropdown2 {
-  margin-top: 250px;
+  margin-top: 175px;
   margin-left:10px;
 }
 .dropdown3 {
-  margin-top: 250px;
+  margin-top: 175px;
   margin-left:10px;
 }
   
-.dropdown4 
-{
-  margin-top: 250px;
-  margin-left:10px;
-}
 
 
 
-/*==================================*/
-/*========/    WRAPPER    \=========*/
+
+                                          /* =======================             WRAPPER           ========================= */
 
 
 
@@ -446,104 +431,10 @@ text-align: center;
 }
 
 
+                                       /* =======================      SECTION LEİSTUNGEN          ========================= */
 
 
-
-.team
-{
-
-  margin-top: 150px;
-  flex-direction: column;
-  text-align: center;
-  justify-content:space-between;
-}
-section
-{
-  display: flex;
-  flex-wrap:wrap;
-  width: 100%;
-  margin-top: 180px;
-  
-}
-
-
-.card
-{
-  flex: 2 1 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 50px;
-  font-size: 18px;
-  padding: 0 130px;
-
-}
-
-.imageSizing
-{
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  background-color: rgb(239, 239, 240);
-  width: 350px;
-  height: 570px;
-  box-shadow: 1px -1px 17px 4px rgba(199,181,181,0.6);
-
-}
-
-.imageSizing img
-{
-  padding: 0 20px;
-  width: 100%;
-  height: auto;
-}
-
-
-article
-{
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  width: 100%;
-  margin-top: 180px;
-}
-
-.überuns
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text:left;
-  width: 70%;
-}
-
-
-
-.überuns_top
-{
-  background-color: rgb(245, 245, 245);
-  padding: 20px;
-}
-
-.überuns_bottom
-{
-  background-color: rgb(250, 139, 131);
-  color: white;
-  padding: 40px;
-
-}
-
-
-
-
-
-
-/*=============     FİLİALE       =============*/
-
-
-
-.filiale
+.leistungen
 {
   margin-top: 150px;
   flex-direction: column;
@@ -552,28 +443,15 @@ article
 
 }
 
-.filiale p
+.leistungen span
+{
+  font-size: 50px;
+}
+
+.leistungen p
 {
   text-align: justify;
 }
-
-
-/*                BLİNKER                */
-
-.blink 
-{
-  
-  font-size:30px;
-  color: #fc3737;
-  animation: blinkMe 4s linear infinite;
-  font-family: goudy stout;
-
- }
-
- 
-
-
-
 
 
 .card2
@@ -583,10 +461,11 @@ article
   justify-content: start;
   flex-direction: row;
   align-items: center;
-  text-align: center;
   margin-top: 100px;
   font-size: 18px;
-  padding: 0 200px;
+  text-align: justify;
+  padding-left: 300px;
+
 
 }
 .card3
@@ -596,10 +475,10 @@ article
   justify-content: right;
   flex-direction: row-reverse;
   align-items: center;
-  text-align: center;
-  margin-top: 100px;
+  text-align: justify;
+  margin-top: 200px;
   font-size: 18px;
-  padding: 0 100px;
+  padding-right: 300px;
 
 }
 .card4
@@ -609,17 +488,23 @@ article
   justify-content: start;
   flex-direction: row;
   align-items: center;
-  text-align: center;
-  margin-top: 100px;
+  text-align:justify;
+  margin-top: 200px;
   font-size: 18px;
-  padding: 50px 0 0 100px;
+  padding-left: 300px;
 
+}
+
+h3
+{
+  text-align: center;
 }
 
 .cardText p
 {
 
 margin:0 40px;
+text-align: justify;
 }
 
 
@@ -670,11 +555,144 @@ margin:0 40px;
 }
 
 
-/*============  FOOTER  =======*/
+
+
+
+
+                              /* =======================      SECTİON UNSERTEAM          ========================= */
+
+
+
+
+.unserTeam
+{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  margin-top: 180px;
+  
+}
+
+.team
+{
+
+  margin-top: 150px;
+  flex-direction: column;
+  text-align: center;
+  justify-content:space-between;
+}
+
+
+.teamCard
+{
+  flex: 2 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  padding: 0 130px;
+
+}
+
+.imageSizing
+{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: rgb(239, 239, 240);
+  width: 350px;
+  height: 570px;
+  box-shadow: 1px -1px 17px 4px rgba(199,181,181,0.6);
+
+}
+
+.imageSizing img
+{
+  padding: 0 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+  /*__________________________________________BLİNKER EFEKT_____________________________________________*/
+.blink1 
+{
+  
+  font-size:40px;
+  color: #fc3737;
+  animation: blinkMe 4s linear infinite;
+  font-family: goudy stout;
+
+ }
+
+
+
+
+ .blink2
+ {
+  font-size:40px;
+  color: #fc3737;
+  animation: blinkMe 4s linear infinite;
+  font-family: goudy stout;
+ }
+/*__________________________________________________________________________________________????______*/
+                                          
+ 
+
+
+
+
+
+
+
+                                          /* =======================             ARTICLE           ========================= */
+
+
+
+article
+{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 180px;
+}
+
+.überuns
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:justify;
+  width: 70%;
+}
+
+.überuns h2
+{
+text-align: center;
+}
+
+.überuns_top
+{
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+}
+
+
+
+
+                                          /* =======================             FOOTER           ========================= */
+
+
 
 
 footer
 {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -690,43 +708,48 @@ footer
   align-items: center;
   justify-content:space-between;
   background-color: #2b2a2a;
-  height: 25vh;
+  height: 35vh;
 }
 
 .spalte1
 {
-  width: 50%;
+  width: 37%;
   display: flex;
-  flex-direction: column;
-  padding-left: 110px;
+  flex-wrap: wrap;
+  justify-content: start;
   padding-right: 30px;
-  margin-top: 40px;
+  margin: 40px 0 0 20px;
 }
 
-.spalte1 p
-{
-  text-align: left;
-  font-size: 18px;
-}
 
 .spalte1 div
 {
   display: flex;
-  justify-content:left;
+  justify-content:start;
+}
+
+.spalte1 p
+{
+  text-align:left;
+ 
+}
+
+.spalte1 h1
+{
+  margin: 0px;
 }
 
 .spalte1 img
 {
+  
   width: 200px;
   margin-right: 20px;
   margin-bottom: 30px;
 }
 
-.spalte1 a
+.spalte2
 {
-  display: flex;
-  justify-content:start;
-  align-items: center;
+  width: 30%;
 }
 
 .spalte2 a
@@ -746,14 +769,16 @@ footer
   margin-right: 20px;
 }
 
-.spalte2 p{
-  text-align: left;
+.spalte2 p
+{
+  width: 360px;
+  text-align: center;
   font-size: 28px; 
 }
 
 .spalte3
 {
-  width: 25%;
+  width: 33%;
   display: flex;
   flex-direction:column;
   justify-content: flex-start;
@@ -772,7 +797,7 @@ footer
 {
   height: 150px;
   width: 100%;
-  margin-top: 40px;
+  
 }
 
 footer hr{
@@ -781,6 +806,66 @@ footer hr{
   width: 82vw;
   
 
+}
+
+
+
+
+                            /* =======================             FORMULAR           ========================= */
+
+.loginBox{
+  width: 350px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background: rgb(236, 227, 227);
+  border-radius: 20px;
+  
+  padding: 0 20px;
+}
+
+.loginBox input{
+  margin-bottom: 10px;
+  padding-left: 10px;
+  
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+.loginBox span{
+  color: rgb(32, 32, 32);
+  font-weight: calibria;
+}
+
+.loginBox input{
+  color: rgb(139, 138, 138);
+  font-weight: calibria;
+  
+}
+
+.loginBox button
+{
+  height: 35px;
+  display: flex;
+  justify-content:center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: rgb(204, 131, 131);
+  padding: 8px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 
@@ -886,6 +971,4 @@ footer hr{
    {
    opacity: 0;
    }
-
-
 }
