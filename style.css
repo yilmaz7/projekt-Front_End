@@ -265,18 +265,17 @@ margin: 0 20px;
 {
   width: 100%;
 	display: flex;
-  justify-content:start;
+  justify-content:center;
   align-items: center;
-  
 	width: 100%;
-  color:blue;
+ 
 }
 
 
 
 .menuPunkte
 {
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -290,7 +289,7 @@ margin: 0 20px;
 
 .dropdownContainer
 {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -465,6 +464,7 @@ text-align: center;
   font-size: 18px;
   text-align: justify;
   padding-left: 300px;
+  
 
 
 }
@@ -505,6 +505,7 @@ h3
 
 margin:0 40px;
 text-align: justify;
+margin-bottom: 100px;
 }
 
 
@@ -659,7 +660,7 @@ article
   flex-wrap:wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 180px;
+  margin-top: 50px;
 }
 
 .überuns
@@ -920,6 +921,55 @@ footer hr{
   }
 
 
+  @media only screen and (max-width: 1150px) {
+
+.card2
+{
+  flex-direction: column;
+  padding-left: 0; 
+}
+
+.card3
+{
+  flex-direction: column;
+  padding-right: 0;
+}
+
+.card4
+{
+  flex-direction: column;
+  padding-left: 0;
+}
+  }
+
+
+  @media only screen and (max-width: 1150px) 
+  {
+
+.menuPunkte
+{
+  width: 0px;
+}
+
+.menuPunkte a
+{
+  width: 0px;
+}
+.menuPunkte a img
+  {
+  width: 0px;
+    
+  }
+  .menuPunkte h3
+  {
+    font-size: 0px;
+
+  }
+    
+  }
+
+
+
 
 
   @keyframes confetti 
@@ -948,6 +998,8 @@ footer hr{
     font-size: 10px;
     padding: 10px;
   }
+
+  
 
 }
 
