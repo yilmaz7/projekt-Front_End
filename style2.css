@@ -656,7 +656,7 @@ footer
 {
   height: 60vh;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   text-align: center;
   justify-content:space-between;
   background-color: #2b2a2a;
@@ -668,6 +668,7 @@ footer
 {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content:space-between;
   background-color: #2b2a2a;
   height: 35vh;
