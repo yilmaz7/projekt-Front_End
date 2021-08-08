@@ -71,6 +71,42 @@ function translateUpdate()
 
 
 
+//==========     SELECT      ==============//
+      
+
+
+let orderButton = document.getElementById("order");
+let itemList = document.getElementById("foods");
+let outputBox = document.getElementById("output");
+
+orderButton.addEventListener("click", function() {
+  let collection = itemList.selectedOptions;
+  let output = "";
+
+  for (let i=0; i<collection.length; i++) {
+    if (output === "") {
+      output = "Deine Bestellungen: ";
+    }
+    output += collection[i].label;
+
+    if (i === (collection.length - 2) && (collection.length < 3)) {
+      output +=  " and ";
+    } else if (i < (collection.length - 2)) {
+      output += ", ";
+    } else if (i === (collection.length - 2)) {
+      output += ", and ";
+    }
+  }
+
+  if (output === "") {
+    output = "Du hast nichts gekauft!";
+  }
+
+  outputBox.innerHTML = output;
+}, false);
+
+
+
 
 
 

@@ -389,6 +389,54 @@ text-align: center;
 }
 
 
+
+
+                                    /* =======================      MUSİK KAUFEN          ========================= */
+
+
+.musik
+{
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+
+#foods
+{
+    width: 300px;
+    padding-left: 10px;
+}
+
+#order
+{
+  margin:30px 0 10px 0;
+}
+
+#output
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  background-color: rgb(226, 226, 226);
+  padding-left: 15px;
+
+}
+
+
+.lied
+{
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+                                      
+
+
                                        /* =======================      SECTION LEİSTUNGEN          ========================= */
 
 
