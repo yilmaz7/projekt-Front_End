@@ -204,11 +204,9 @@ margin: 0 20px;
 
 
 
-                                            /* =======================             NAVBAR           ========================= */
+                                             /* =======================             NAVBAR           ========================= */
 
-#navbar
-{
-
+#navbar{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -218,94 +216,66 @@ margin: 0 20px;
   height: 15vh;
   z-index: 2;
 }
-
-
-.menuContainer
-{
+.menuContainer{
   width: 100%;
-	display: flex;
+  height: 300px;
+  display: flex;
   justify-content:center;
   align-items: center;
-	width: 100%;
- 
+  
 }
-
-
-
-.menuPunkte
-{
+.logoContainer{
   width: 30%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   align-items:center;
-	color: rgb(83, 82, 82);
-	text-align: center;
+  color: rgb(83, 82, 82);
+  text-align: center;
   padding-left: 50px;
   margin-right: 150px;
-
+  
 }
-
-.dropdownContainer
-{
+.dropdownContainer{
   width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
+  
 
-.bewertung
-{
+}
+.bewertung{
   width: 20%;
   display: flex;
   justify-content: end;
   margin-right: 20px;
 }
-
-.bewertung a
-{
+.bewertung a{
   width: 20%;
   font-size: 30px;
   text-decoration: none;
 }
-
-
-.menuPunkte h3
-{
+.logoContainer h3{
   text-align: center;
   margin: 0 30px;
 }
-
-
-.menuPunkte a
-{
-	color:#989898;
-	text-decoration: none;
-	
+.logoContainer a{
+  color:#989898;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  
-
 }
-
-.menuPunkte a img
-{
-  width: 200px;
-  
-
+.logoContainer a img{
+  width: 100px;
+  height: 50px;
 }
-
-
-.dropdown
-{
+.dropdown{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 align-items: center;
-margin-bottom: 40px;
 text-align: center;
 }
-
 .dropbtn {
   height: 40px;
   background-color: #f5f5f5;
@@ -317,18 +287,14 @@ text-align: center;
   font-size: 16px;
   border-radius: 25px;
   border: none;
-  
-
 }
-.dropdown-content 
-{
+.dropdown-content {
   width:100%;
   overflow:hidden;
 }
 .dropdown-content > div {
   background-color: #f9f9f9;
   transform:translateY(-100%);
-  
   transition:transform 1s;
 }
 .dropdown-content a {
@@ -336,7 +302,6 @@ text-align: center;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-
 }
 .dropdown-content a:hover {
   background-color: #f1f1f1;
@@ -351,10 +316,8 @@ text-align: center;
   transition: 0.3s;
 }
 .dropdown1 {
-  
   margin-top: 175px;
   margin-left:10px;
-
 }
 .dropdown2 {
   margin-top: 175px;
@@ -364,6 +327,7 @@ text-align: center;
   margin-top: 175px;
   margin-left:10px;
 }
+                                              
   
 
 
@@ -822,7 +786,33 @@ footer hr{
 }
 
 
+                            /* =======================             BACK TO TOP          ========================= */
 
+#myBtn {
+display: flex; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 30px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+padding: 5px; /* Some padding */
+font-size: 18px;
+border-radius: 35px;
+width: 30px;
+height: 30px;                             
+                              
+}
+                            
+                            
+#back1
+{
+  width: 20px;
+  height: 20px;
+}                          
+
+
+
+                      
 
                             /* =======================             FORMULAR           ========================= */
 
@@ -852,9 +842,6 @@ footer hr{
 }
 
 
-
-
-
 .loginBox span{
   color: rgb(32, 32, 32);
   font-weight: calibria;
@@ -881,113 +868,6 @@ footer hr{
   border-radius: 5px;
 }
 
-
-
-@keyframes breite
-{
-    0% { width: 0; }
-    100% { width: 100%; }
-}
-
-
-
-
-@media only screen and (max-width: 900px) {
-
-  .column-first 
-  {
-    width: 100%;
-  }
-  
-  .column-second 
-  {
-    width: 100%;
-  }
-  
-  .container a, .menuContainer a
-  {
-    font-size: 12px;
-  }
-  
-  .menuPunkte a:first-child
-  {
-    margin-left: 0;
-  }
-  
-  .menuPunkte a
-  {
-    padding-left: 5px;
-  }
-  
-  .card
-  {
-    font-size: 14px;
-    padding: 20px;
-  }
-  
-  .scrollbar
-  {
-    visibility: collapse;
-  }
-  
-  }
-
-
-  @media only screen and (max-width: 1150px) {
-
-.card2
-{
-  flex-direction: column;
-  padding-left: 0; 
-}
-
-.card3
-{
-  flex-direction: column;
-  padding-right: 0;
-}
-
-.card4
-{
-  flex-direction: column;
-  padding-left: 0;
-}
-  }
-
- 
-
-
-  @media only screen and (max-width: 1150px) 
-  {
-
-.menuPunkte
-{
-  width: 0px;
-}
-
-.menuPunkte a
-{
-  width: 0px;
-}
-
-.menuPunkte a img
-{
-  width: 0px;
-    
-}
-
-  .menuPunkte h3
-{
-    font-size: 0px;
-
-}
-    
-}
-
-  
-
-  @media only screen and (max-width: 1250px) 
-  {
 
   .spalte
   {
@@ -1034,54 +914,18 @@ footer hr{
   }
 
 
-
-
-
-
-
-  @keyframes confetti 
-  {
-    0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
-    25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
-    50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
-    75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
-    100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
-  }
-
-
-
-
-
-
-@media only screen and (max-width: 600px)
-{
-  .container a, .menuContainer a
-  {
-    font-size: 10px;
-  }
-  
-  .card
-  {
-    font-size: 10px;
-    padding: 10px;
-  }
-
-  .teamCard
-  {
-    padding-left:0 ;
-    padding-right: 0;
-  }
-
-  
-
+  @keyframes breite{
+    0% { width: 0; }
+    100% { width: 100%; }
 }
-
-
-
-
-
-@keyframes blinkMe 
-{
+@keyframes confetti {
+  0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+  25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+  50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+  75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+  100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+}
+@keyframes blinkMe {
    0% 
    {
    opacity: 0;
@@ -1096,4 +940,214 @@ footer hr{
    {
    opacity: 0;
    }
+}
+@media only screen and (max-width: 1250px) {
+  .blink1{
+    font-size: 30px;
+  }
+  .blink2{
+    font-size: 30px;
+  }
+  .spalte{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .spalte1{
+    width: 33%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .spalte2{
+    width: 33%;
+    justify-content: center;
+  }
+  .spalte3{
+    width: 33%;
+  justify-content: center;
+  }
+  footer{
+  height: 100vh;
+  }
+  footer hr{ 
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .team{
+    margin-top: 0;
+  }
+    .card2{
+    flex-direction: column;
+    padding-left: 0; 
+  }
+  .card3{
+    flex-direction: column;
+    padding-right: 0;
+    margin-top: 50px;
+  }
+  .card4{
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 50px;
+
+  }  
+}
+@media only screen and (max-width: 900px) {
+  .blink1{
+    font-size: 25px;
+  }
+  .blink2{
+    font-size: 25px;
+  }
+  .column-first {
+    width: 100%;
+  }
+  .column-second {
+    width: 100%;
+  }
+  .container a, .menuContainer a{
+    font-size: 12px;
+  }
+  
+  .card{
+    font-size: 14px;
+    padding: 20px;
+  }
+  .scrollbar{
+    visibility: collapse;
+  }
+  .logoContainer{
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  .menuContainer{
+    
+    flex-direction: column;
+    justify-content:flex-end;
+  }
+ 
+
+  
+
+  .dropdown1 {
+    margin-top: 12px;
+  }
+  .dropdown2 {
+    margin-top: 12px;
+  }
+  .dropdown3 {
+    margin-top: 12px;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px){
+  .container a, .menuContainer a{
+    font-size: 12px;
+  }
+  .card{
+    font-size: 10px;
+    padding: 10px;
+  }
+  .teamCard{
+    padding-left:0 ;
+    padding-right: 0;
+  }
+  .imageSizing2{
+    width: 400px;
+    height: 330px;
+  }
+  .blink1{
+    font-size: 18px;
+  }
+  .blink2{
+    font-size: 18px;
+  }
+  .dropdownContainer{
+    width: 100%;
+    margin-left: 40px;
+  }
+  .logoContainer{
+    padding:0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .dropdownContainer{
+    margin-left: 0;
+  }
+  .dropbtn{
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+
+}
+
+
+@media only screen and (max-width: 420px)
+{
+  
+  .container a, .menuContainer a{
+    font-size: 12px;
+  }
+  .dropdown-content a{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .dropdown1{
+    margin-left: 0;
+  }
+  .dropdown2{
+    margin-left: 0;
+  }
+  .dropdown3{
+    margin-left: 0;
+  }
+  
+  .card{
+    font-size: 10px;
+    padding: 10px;
+  }
+  .teamCard{
+    padding-left:0 ;
+    padding-right: 0;
+  }
+  .imageSizing{
+    width: 200px;
+    height: 300px;
+  }
+  .imageSizing img{
+  padding: 0 20px;
+  width: 100%;
+  height: auto;
+}
+  .imageSizing2{
+    width: 300px;
+    height: 250px;
+  }
+  .blink1{
+    font-size: 14px;
+  }
+  .blink2{
+    font-size: 14px;
+  }
+  .card3{
+    flex-direction: column;
+    padding-right: 0;
+    margin-top: 0;
+  }
+  .card4{
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0;
+
+  }
+  
 }
