@@ -8,7 +8,7 @@ header{
   justify-content: start;
   flex-direction:row;
   align-items: center;
-  background-color: #363535;
+  background-color: #4a07c7;
   color: #353535;
 }
 .frage{
@@ -305,7 +305,7 @@ text-align: center;
   display:flex;
   flex-direction:column;
 }
-.wrapper spa{
+.wrapper span{
   display:flex;
   justify-content: center;
   align-items: center;
