@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -130,6 +135,39 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+const app = new Vue(
+  {
+      el: "#app",
+      data:
+      {
+          name:"",
+          nachname:"",
+          passwort: "",
+          okay: false,     //false yapmamızın sebebi sayfa ilk açıldığında checkbox'un işaretli olarak gelmemesi içindir. Biz tıklarsak true oluyor.
+          information: ""
+          
+      },
+      methods:
+      {
+          kayit: function()
+          {
+              if ((this.passwort) >=18 && (this.okay))
+              {
+                  this.information ="ihre Anmeldung ist erfolgreich"
+              }
+              else
+              {
+                  this.information = "ihre Anmeldung war nicht erfolgreich"
+
+              }
+          }
+
+      }
+  }
+)
 
 
 

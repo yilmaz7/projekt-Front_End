@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>PrjektFrontEnd</title>
+
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+    
+    
+   
   </head>
   <body>
 
@@ -137,39 +142,68 @@
 
         
                              <!--====================         MUSIK KAUFEN          ==============================-->
-      <div class="musik">
-        <label for="foods">Welche Musik möchtest du kaufen?</label><br>
-        <select id="foods" name="foods" size="8" multiple>
-          <option value="1">Instrumental</option>
-          <option value="2">jazz</option>
-          <option value="3">pop</option>
-          <option value="4">Rock</option>
-          <option value="5">Klassik</option>
-          <option value="6">Latin</option>
-          <option value="7">Samba</option>
-          <option value="8">Islamische Musik</option>
-          <option value="9">Elektro</option>
-          <option value="10">Gothic</option>
-          <option value="5">Alternative</option>
-          <option value="6">Oriental</option>
-          <option value="7">Punk</option>
-          <option value="8">Indie</option>
-          <option value="9">Hits</option>
-          <option value="10">Bossa Nova</option>
-        </select>
-        <br>
-        <button name="order" id="order">
-          Satin al
-        </button>
-        <p id="output">
-        </p>
-      </div>
-        <div class="lied">
-          <audio controls>
-            <source src="horjavascript:void(0);se.ogg" type="audio/ogg">
-            <source src="modular-ambient-01-789.mp3" type="audio/mpeg">
-          </audio>
+        <div class="musik">
+          <label for="foods">Welche Musik möchtest du kaufen?</label><br>
+          <select id="foods" name="foods" size="8" multiple>
+            <option value="1">Instrumental</option>
+            <option value="2">jazz</option>
+            <option value="3">pop</option>
+            <option value="4">Rock</option>
+            <option value="5">Klassik</option>
+            <option value="6">Latin</option>
+            <option value="7">Samba</option>
+            <option value="8">Islamische Musik</option>
+            <option value="9">Elektro</option>
+            <option value="10">Gothic</option>
+            <option value="5">Alternative</option>
+            <option value="6">Oriental</option>
+            <option value="7">Punk</option>
+            <option value="8">Indie</option>
+            <option value="9">Hits</option>
+            <option value="10">Bossa Nova</option>
+          </select>
+          <br>
+          <button name="order" id="order">
+            Satin al
+          </button>
+          <p id="output">
+          </p>
         </div>
+          <div class="lied">
+            <audio controls>
+              <source src="horjavascript:void(0);se.ogg" type="audio/ogg">
+              <source src="modular-ambient-01-789.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+
+        <!--======================   LOGİN   ============================-->
+
+        <div class="vueContainer">
+          <div class="container" id="app">
+          
+              <input type="text" v-model="name" placeholder="Name">
+              <br><br>
+              <input type="text" v-model="nachname" placeholder="Nachname">
+              <br><br>
+              <input type="text" v-model="passwort" placeholder="Passwort">
+              <br><br>
+              
+              <label >
+                  <input type="checkbox" v-model="okay">ich habe gelesen und akzeptiere die Vereinbarung.
+              </label>
+              
+              <br><br><br>
+
+              <button @click="speichern">Speichern</button>
+              <br><br><br>
+
+              <div>{{ information }}</div>
+              <br><br><br>
+              
+          </div>
+
+        </div>
+       
 
                                         <!--==================================================-->
 
@@ -194,11 +228,9 @@
           </div>
         </div>
 
-      
-
-        
-
+    
       </section>
+
 
 
       <div class="team">
@@ -312,7 +344,12 @@
         </button>
     </footer>
 
+    
+
     <script src="deutschkurs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    
 
   </body>
 </html>
